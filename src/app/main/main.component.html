@@ -1,0 +1,145 @@
+<div id="sudoku-grid-container">
+    <tbody id="sudoku-grid">
+        <tr>
+            <td class="sub00 y0 x0">0</td>
+            <td class="sub00 y0 x1">0</td>
+            <td class="sub00 y0 x2">0</td>
+            <td class="sub01 y0 x3">0</td>
+            <td class="sub01 y0 x4">0</td>
+            <td class="sub01 y0 x5">0</td>
+            <td class="sub02 y0 x6">0</td>
+            <td class="sub02 y0 x7">0</td>
+            <td class="sub02 y0 x8">0</td>
+        </tr>
+        <tr>
+            <td class="sub00 y1 x0">0</td>
+            <td class="sub00 y1 x1">0</td>
+            <td class="sub00 y1 x2">0</td>
+            <td class="sub01 y1 x3">0</td>
+            <td class="sub01 y1 x4">0</td>
+            <td class="sub01 y1 x5">0</td>
+            <td class="sub02 y1 x6">0</td>
+            <td class="sub02 y1 x7">0</td>
+            <td class="sub02 y1 x8">0</td>
+        </tr>
+        <tr>
+            <td class="sub00 y2 x0">0</td>
+            <td class="sub00 y2 x1">0</td>
+            <td class="sub00 y2 x2">0</td>
+            <td class="sub01 y2 x3">0</td>
+            <td class="sub01 y2 x4">0</td>
+            <td class="sub01 y2 x5">0</td>
+            <td class="sub02 y2 x6">0</td>
+            <td class="sub02 y2 x7">0</td>
+            <td class="sub02 y2 x8">0</td>
+        </tr>
+        <tr>
+            <td class="sub10 y3 x0">0</td>
+            <td class="sub10 y3 x1">0</td>
+            <td class="sub10 y3 x2">0</td>
+            <td class="sub11 y3 x3">0</td>
+            <td class="sub11 y3 x4">0</td>
+            <td class="sub11 y3 x5">0</td>
+            <td class="sub12 y3 x6">0</td>
+            <td class="sub12 y3 x7">0</td>
+            <td class="sub12 y3 x8">0</td>
+        </tr>
+        <tr>
+            <td class="sub10 y4 x0">0</td>
+            <td class="sub10 y4 x1">0</td>
+            <td class="sub10 y4 x2">0</td>
+            <td class="sub11 y4 x3">0</td>
+            <td class="sub11 y4 x4">0</td>
+            <td class="sub11 y4 x5">0</td>
+            <td class="sub12 y4 x6">0</td>
+            <td class="sub12 y4 x7">0</td>
+            <td class="sub12 y4 x8">0</td>
+        </tr>
+        <tr>
+            <td class="sub10 y5 x0">0</td>
+            <td class="sub10 y5 x1">0</td>
+            <td class="sub10 y5 x2">0</td>
+            <td class="sub11 y5 x3">0</td>
+            <td class="sub11 y5 x4">0</td>
+            <td class="sub11 y5 x5">0</td>
+            <td class="sub12 y5 x6">0</td>
+            <td class="sub12 y5 x7">0</td>
+            <td class="sub12 y5 x8">0</td>
+        </tr>
+        <tr>
+            <td class="sub20 y6 x0">0</td>
+            <td class="sub20 y6 x1">0</td>
+            <td class="sub20 y6 x2">0</td>
+            <td class="sub21 y6 x3">0</td>
+            <td class="sub21 y6 x4">0</td>
+            <td class="sub21 y6 x5">0</td>
+            <td class="sub22 y6 x6">0</td>
+            <td class="sub22 y6 x7">0</td>
+            <td class="sub22 y6 x8">0</td>
+        </tr>
+        <tr>
+            <td class="sub20 y7 x0">0</td>
+            <td class="sub20 y7 x1">0</td>
+            <td class="sub20 y7 x2">0</td>
+            <td class="sub21 y7 x3">0</td>
+            <td class="sub21 y7 x4">0</td>
+            <td class="sub21 y7 x5">0</td>
+            <td class="sub22 y7 x6">0</td>
+            <td class="sub22 y7 x7">0</td>
+            <td class="sub22 y7 x8">0</td>
+        </tr>
+        <tr>
+            <td class="sub20 y8 x0">0</td>
+            <td class="sub20 y8 x1">0</td>
+            <td class="sub20 y8 x2">0</td>
+            <td class="sub21 y8 x3">0</td>
+            <td class="sub21 y8 x4">0</td>
+            <td class="sub21 y8 x5">0</td>
+            <td class="sub22 y8 x6">0</td>
+            <td class="sub22 y8 x7">0</td>
+            <td class="sub22 y8 x8">0</td>
+        </tr>
+    </tbody>
+</div>
+
+
+<br>
+
+
+<button mat-raised-button class="firstRowBttn" id="subs-bttn" (click)="subs_coloring()">
+    <span>Sub-cubes</span>
+</button>
+
+
+<button mat-raised-button class="firstRowBttn" id="rows-bttn" (click)="rows_coloring()">
+    <span>Rows</span>
+</button>
+
+
+<button mat-raised-button class="firstRowBttn" id="cols-bttn" (click)="cols_coloring()">
+    <span>Columns</span>
+</button>
+
+
+<button mat-raised-button class="firstRowBttn" id="null-coloring" (click)="null_coloring()">
+    <span>Null coloring</span>
+</button>
+
+
+<br>
+
+
+<br>
+
+
+<button mat-raised-button class="secondRowBttn" id="generate-bttn" (click)="I_fTxyz_tFWs_O()">
+    <span>Generate</span>
+</button>
+
+
+<button mat-raised-button class="secondRowBttn" id="solve-bttn" (click)="rerender_UI_state()">
+    <span>Solve</span>
+</button>
+
+
+<br>

@@ -1,0 +1,38 @@
+* {
+    user-select: none !important;
+    font-size: 4mm !important;
+    font-weight: 900 !important;
+    font-family: cursive !important;
+    color: rgb(0, 0, 0);
+}
+
+#sudoku-grid-container {
+    margin: 0 0 0 43mm;
+}
+
+#sudoku-grid {
+    box-shadow: 0 0 10cm 3cm rgb(61, 15, 10);
+    border-radius: 2mm;
+}
+
+td {
+    border: 1mm solid rgb(122, 122, 122);
+    padding: 0 2mm 0 2mm;
+    border-radius: 2mm;
+}
+
+.firstRowBttn {
+    margin: 0 0 0 1cm;
+}
+
+.secondRowBttn {
+    margin: 0 0 0 37mm;
+}
+
+span {
+    color: rgba(223, 190, 0, 1.0) !important;
+}
+
+#solve-bttn {
+    visibility: hidden;
+}

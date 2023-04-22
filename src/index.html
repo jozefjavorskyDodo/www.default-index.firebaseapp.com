@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="default, index_htm, ECMAScript, ng_app, Node">
+  <meta name="description" content="FE web stuff tryout.">
+  <meta name="author" content="dodo ~ jozef javorsky">
+  <meta name="author_email" content="jozef.javorsky.strom44zem88@gmail.com">
+  <meta name="author_github" content="github.com/jozefjavorskyDodo">
+  <title id="html-head-title-website_title">&nbsp;°&nbsp;Sud</title>
+  <link rel="icon" type="image/x-icon" sizes="16x16" id="html-head-link-website_favicon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+
+
+<body class="mat-typography">
+  <app-root></app-root>
+  <script>
+    String("use strict");
+    try {
+      document.querySelector(
+        String("#html-head-title-website_title")
+      ).innerHTML += String.fromCodePoint(Number(128192)) + String("ku")
+      + String("\u00a0") + String("°") + String("\u00a0") + String("Web")
+      + String("\u00a0") + String("°") + String("\u00a0") + String("App °");
+      document.querySelector(
+        String("#html-head-link-website_favicon")
+      ).setAttribute(
+        String("href"),
+        String("data:image/x-icon;") +
+        String("base64,") +
+        String("iVBORw0KGgoAAAANSUhEUgAAABAAAAA") +
+        String("QCAIAAACQkWg2AAAAAXNSR0IArs4c6Q") +
+        String("AAAARnQU1BAACxjwv8YQUAAAAJcEhZc") +
+        String("wAADsMAAA7DAcdvqGQAAABPSURBVDhP") +
+        String("ncyxDcAwDANBzZ3hskpWSejvWJCIvvK") +
+        String("BgmfTc891+h6VCjBUqnxhVIChclX+0q") +
+        String("gAQ6XKF0YFGCpX5S+NCjBUqnxhVICh8") +
+        String("mczL9Ip2xldQ4JpAAAAAElFTkSuQmCC")
+      );
+    } catch (err) {
+      if (err) {
+        console.clear();
+        alert(String("bug"));
+        console.log(err);
+      };
+    };
+  </script>
+</body>
+
+
+
+</html>
